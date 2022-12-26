@@ -4,10 +4,10 @@ import random
 # Lista de palabras que se usarán para generar nombres de carpetas y texto aleatorio
 palabras = [
     "conejo",
-    "león",
+    "leon",
     "oveja",
     "cerdo",
-    "ratón",
+    "raton",
     "zorro",
     "caballo",
     "gallina",
@@ -47,7 +47,7 @@ for i in range(1000):
             descripcion = (
                 titulo + " " + " ".join([random.choice(palabras) for _ in range(2)])
             )
-            tags_write = ",".join([random.choice(tags) for _ in range(2)])
+            tags_write = ", ".join([random.choice(tags) for _ in range(2)])
             content = (
                 titulo
                 + " "
