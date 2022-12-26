@@ -25,7 +25,13 @@ for i in range(3000):
     # Genera dos archivos .md con texto aleatorio en la carpeta recién creada
     for j in range(2):
         # Abre el archivo en modo de escritura
-        with open(os.path.join(nombre_carpeta, f"cuento{j+1}.md"), "w") as f:
+        with open(
+            os.path.join(
+                nombre_carpeta,
+                f"-".join([random.choice(palabras) for _ in range(3)]) + f"-{i+1}.md",
+            ),
+            "w",
+        ) as f:
             # Genera un título aleatorio usando dos palabras aleatorias
             titulo = " ".join([random.choice(palabras).capitalize() for _ in range(2)])
             # Escribe el título en el archivo
