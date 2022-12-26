@@ -14,4 +14,3 @@ raton perro gato conejo perro conejo conejo perro leon gallina
 |--------|------|------|
 | 1      | 2    | 3    |
 | 4      | 5    | 6    |
-| 7      | 8    | 9    |
